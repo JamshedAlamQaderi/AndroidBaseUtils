@@ -28,6 +28,10 @@ allprojects {
      * See https://discuss.gradle.org/t/gradle-not-compiles-with-solder-tooling-jar/7583/20
      */
     tasks.withType(JavaCompile) { options.fork = true }
+    allprojects {
+    	version = "1.0"
+    	group = 'com.github.JamshedAlamQaderi'
+    }
 }
 
 task clean(type: Delete) {
